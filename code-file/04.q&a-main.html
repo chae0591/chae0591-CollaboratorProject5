@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./common.css">
+    <style>
+        html, body {
+        margin: 0;
+        padding: 0;
+         }
+
+        * {
+        box-sizing: border-box;
+        }
+        .outbox{
+            width: 1200px;
+            height: 3000px;
+            margin: auto;
+        }
+        .nav {
+            position: relative;
+            width: 100%;
+            min-height: 75px;
+        }
+        .logo {
+            margin: 0;
+        }
+        .nav-item > ul {
+            margin: 0;
+            text-align: right;
+        }
+        .nav-item > ul > li {
+            display: inline-block;
+            padding: 1rem;
+        }
+        .nav-item li > a {
+            text-decoration: none;
+            color: black;
+        }
+        .banner {
+            position: relative;
+            width: 100%;
+            min-height: 200px;
+            background-color: beige;
+        }
+        .section {
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+        }
+        .section > .aside{
+            float: left;
+            width: 20%;
+            height: 100%;
+            border: 1px solid black;
+        }
+        .section > .aside > ul {
+            width: 200px;
+        } 
+        .section > .aside > ul > li {
+            display: block;
+            margin:1rem;
+            padding: 0;
+        }
+        .section > .aside li > a {
+            text-decoration: none;
+        }
+        .section > .article {
+            float:left;
+            width: 80%;
+            height: 100%; 
+            position: relative;
+            border: 1px solid black;
+        }
+        .section > .article > .option >
+        .select-list, .search-input, .searchBtn, .newPostBtn {
+            height: 30px;
+            margin: 0;
+        }
+        .section > .article > .option >
+        .newPostBtn {
+            float: right;
+        }
+        .section > .article a {
+            text-decoration: none;
+            color: black;
+        }
+    
+        .section > .article > .option,
+        .section > .article > .textBox {
+            margin: 1rem;
+        }
+        .section > .article > .textBox {
+            width: 100%;
+            margin: 0;
+            padding: 1rem;
+        }
+        .section > .article > .pagination {
+            text-align: center;
+        }
+        .section > .article > .pagination > ul > li {
+            display: inline-block;
+            margin: 1rem;
+        }
+        .section > .article > .textBox > .textBox-line {
+            height: 150px;
+            border: 1px solid black;
+            padding: 1rem;
+        }
+        .section > .article > .textBox > .textBox-line > .postdate {
+            float:right;
+        }
+        .section > .article > .textBox > .writer {
+            color: red;
+        }
+        .footer{
+            position: relative;
+            background-color: beige;
+            width: 100%;
+            height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+  <div class="outbox">
+  
+   <div class="nav">
+      <h1 class="logo">디비go전국방방곡곡</h1>
+       <div class="nav-item">
+       <ul>
+           <li><a href="#">추천콘텐츠</a></li>
+           <li><a href="#">여행꿀팁</a></li>
+           <li><a href="#">여행Q&A</a></li>
+           <li><a href="#">로그인</a></li>
+       </ul>
+       </div>
+   </div>
+   
+   <div class="banner">
+       <div class="title">
+           <h2>여행, 궁금해요!</h2>
+       </div>
+   </div>
+   
+   <div class="section">
+        <label>전체 > 여행Q&A</label>
+        <hr>
+        <div class="aside">
+            <ul>
+                <li><a href="#">전체</a></li>
+                <li><a href="#">지역</a></li>
+                <li><a href="#">숙소</a></li>
+                <li><a href="#">맛집</a></li>
+                <li><a href="#">렌탈</a></li>
+            </ul>
+        </div>
+        <div class="article">
+            <div class="option">
+                  <h3>답변을 기다려요!</h3>
+                  <select class="select-list">
+                  <option>최신순</option>
+                  <option>답변적은순</option>
+                  <option>답변많은순</option>
+                  </select>
+                  <input class="search-input" type="text" placeholder="검색어를 입력하세요">
+                  <input class=searchBtn type="button" value="검색">
+                  <input class=newPostBtn type="button" value="질문하기">
+            </div>
+            <div class="textBox">
+                  <div class="textBox-line">
+                   <label class="postdate">2020/12/10 14:30</label>
+                   <h3><a href="#">강원도에 부모님과 여행갈 만한 곳 있을까요?</a></h3>
+                   <label><a href="#">안녕하세요. 이번 주말에 강원도로 여행가려고 합니다.</a></label>
+                   <br>
+                   <label class="writer">서하윤님의 질문입니다</label>
+                   </div>
+            </div>
+            <div class="textBox">
+                   <div class="textBox-line">
+                   <label class="postdate">2020/12/10 14:30</label>
+                   <h3><a href="#">강원도에 부모님과 여행갈 만한 곳 있을까요?</a></h3>
+                   <label><a href="#">안녕하세요. 이번 주말에 강원도로 여행가려고 합니다.</a></label>
+                   <br>
+                   <label class="writer">서하윤님의 질문입니다</label>
+                   </div>
+            </div>
+            <div class="textBox">
+                   <div class="textBox-line">
+                   <label class="postdate">2020/12/10 14:30</label>
+                   <h3><a href="#">강원도에 부모님과 여행갈 만한 곳 있을까요?</a></h3>
+                   <label><a href="#">안녕하세요. 이번 주말에 강원도로 여행가려고 합니다.</a></label>
+                   <br>
+                   <label class="writer">서하윤님의 질문입니다</label>
+                   </div>
+            </div>
+            <div class="pagination">
+            <ul>
+                <li><a href="#">&lt;</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+                <li><a href="#">9</a></li>
+                <li><a href="#">10</a></li>
+                <li><a href="#">&gt;</a></li>
+            </ul>
+            </div>
+       </div>
+   </div>
+   
+   <div class="footer">
+       <label>이용약관</label>
+       <br>
+       <span>Copuright&copy;디비go.All Right Reserved.</span>
+   </div>
+   
+   </div>
+</body>
+</html>
