@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login page</title>
+</head>
+
+<style>
+   
+
+    .wholething {
+        text-align: center
+    }
+
+     .login-title {
+        color: black;
+        padding: 15px 32px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        width: 230px;
+    }
+    
+    .email-slot {
+        width: 300px;
+        height: 40px;
+        background-image:url("./image/1.png");
+
+    }
+    .pw-slot {
+        width: 300px;
+        height: 40px;
+        background-image:url("./image/2.png");
+
+    }
+
+    .keep-login-button {
+        margin-right: 170px;
+
+    }
+
+    .find-pw {
+        margin-left: 210px;
+        margin-top: -23px
+    }
+
+    .login-button {
+        background-color: #4CAF50;
+        /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 30px;
+        width: 290px;
+    }
+</style>
+
+<body class=wholething>
+    <div class="login-title">
+        <h3>디비고 로그인하기 </h3>
+    </div>
+    <span onclick="close_div(1)">&#10006</span>
+
+    <hr style="width:300px">
+    <div>
+        <input class="email-slot" type="text" placeholder="이메일">
+    </div>
+    <br>
+    <div>
+        <input class="pw-slot" type="text" placeholder="비밀번호">
+    </div>
+    <br>
+    <div class="keep-login-button">
+        <input type="checkbox">로그인상태 유지
+    </div>
+    <div class="find-pw">
+        <input type="button" value="비밀번호 찾기">
+    </div>
+
+    <div>
+        <button class="login-button">로그인</button>
+    </div>
+    <hr style="width:300px">
+
+    <div class="new-mem">이메일 주소로 <a href="url">회원가입</a></div>
+    <br>
+    <div class="copyright">&copy; Divigo Corp. All rights reserved.</div>
+
+</body>
+</html>
