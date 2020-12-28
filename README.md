@@ -4,6 +4,5 @@
 * CLI: <https://victorydntmd.tistory.com/91>
 * Branch 이름작성법: <https://codingsight.com/git-branching-naming-convention-best-practices/>
 
-ㅎㅅㄷㄴ
-ㅇㅈㅇ
+
 
